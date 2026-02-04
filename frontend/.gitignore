@@ -1,0 +1,15 @@
+/.idea
+/.vscode
+/node_modules
+/frontend/node_modules
+/dist
+/build
+/coverage
+/logs
+/tmp
+/temp
+/test
+/tests
+/test-results
+/test-results.xml
+/test-results.json

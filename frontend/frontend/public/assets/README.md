@@ -1,0 +1,1 @@
+# C'est dans cet emplacement que se trouveront les images, vidéos,...etc que nous utiliserons dans notre projet
