@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const baseURL = "http://localhost:8080/api/v1";
-export const backendURL = "http://localhost:8080";
+export const baseURL = "https://planning-map-backend.onrender.com";
+export const backendURL = "https://planning-map-backend.onrender.com";
 
 export const getImageURL = (path) => {
   if (!path) return null;
