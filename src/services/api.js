@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL || "https://backend-planingmap.onrender.com";
+export const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL || "https://backend-planingmap.onrender.com/api/v1";
 
 export const getImageURL = (path) => {
   if (!path) return null;
