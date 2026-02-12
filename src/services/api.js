@@ -1,16 +1,15 @@
 import axios from 'axios';
 
-export const baseURL = "https://planning-map-backend.onrender.com";
-export const backendURL = "https://planning-map-backend.onrender.com";
+export const NEXT_PUBLIC_API_URL = "https://planning-map-backend.onrender.com";
 
 export const getImageURL = (path) => {
   if (!path) return null;
   if (path.startsWith('http')) return path;
-  return `${backendURL}${path.startsWith('/') ? '' : '/'}${path}`;
+  return `${NEXT_PUBLIC_API_URL}${path.startsWith('/') ? '' : '/'}${path}`;
 };
 
 const api = axios.create({
-  baseURL,
+  NEXT_PUBLIC_API_URL,
   headers: {
     "Content-Type": "application/json"
   },
