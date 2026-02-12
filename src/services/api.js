@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const NEXT_PUBLIC_API_URL = "https://planning-map-backend.onrender.com";
+export const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL || "https://backend-planingmap.onrender.com";
 
 export const getImageURL = (path) => {
   if (!path) return null;
@@ -9,7 +9,7 @@ export const getImageURL = (path) => {
 };
 
 const api = axios.create({
-  NEXT_PUBLIC_API_URL,
+  baseURL: NEXT_PUBLIC_API_URL,
   headers: {
     "Content-Type": "application/json"
   },
